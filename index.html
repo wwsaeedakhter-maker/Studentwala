@@ -1,137 +1,75 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>STUDENT WALA</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Student Wala - Welcome</title>
   <style>
     body {
-      font-family: 'Poppins', sans-serif;
       margin: 0;
       padding: 0;
-      background-color: #f4f7fc;
-      color: #333;
-    }
-
-    header {
-      background-color: #007bff;
+      font-family: "Poppins", sans-serif;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      background: linear-gradient(135deg, #007bff, #00bfff);
       color: white;
       text-align: center;
-      padding: 20px;
-      font-size: 28px;
-      font-weight: bold;
-      letter-spacing: 1px;
+      overflow: hidden;
     }
 
-    .container {
-      width: 90%;
-      max-width: 1100px;
-      margin: 40px auto;
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-      gap: 20px;
+    h1 {
+      font-size: 2.8rem;
+      margin-bottom: 20px;
+      animation: fadeInDown 1.5s ease;
     }
 
-    .card {
-      background-color: white;
-      border-radius: 12px;
-      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
-      padding: 20px;
-      text-align: center;
-      transition: 0.3s;
+    p {
+      font-size: 1.2rem;
+      margin-bottom: 40px;
+      animation: fadeIn 2s ease;
     }
 
-    .card:hover {
-      transform: translateY(-5px);
-      box-shadow: 0 6px 15px rgba(0,0,0,0.15);
-    }
-
-    .card h3 {
+    button {
+      background: white;
       color: #007bff;
-      font-size: 20px;
-      margin-bottom: 10px;
-    }
-
-    .card p {
-      font-size: 14px;
-      color: #555;
-      margin-bottom: 15px;
-    }
-
-    .btn {
-      background-color: #007bff;
-      color: white;
       border: none;
-      padding: 10px 20px;
-      border-radius: 8px;
-      text-decoration: none;
-      font-weight: bold;
-      transition: 0.3s;
+      padding: 14px 30px;
+      border-radius: 50px;
+      font-size: 1.2rem;
+      cursor: pointer;
+      transition: all 0.3s ease;
+      animation: bounceIn 2s ease;
     }
 
-    .btn:hover {
-      background-color: #0056b3;
-    }
-
-    .ad-space {
-      background: #eaf1ff;
-      border: 2px dashed #007bff;
-      text-align: center;
-      padding: 30px;
-      border-radius: 10px;
-      color: #007bff;
-      font-weight: bold;
-      margin: 40px auto;
-      width: 90%;
-      max-width: 1000px;
-    }
-
-    footer {
-      background-color: #007bff;
+    button:hover {
+      background: #007bff;
       color: white;
-      text-align: center;
-      padding: 15px;
-      font-size: 14px;
-      margin-top: 50px;
+      transform: scale(1.05);
+    }
+
+    @keyframes fadeInDown {
+      from { opacity: 0; transform: translateY(-50px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; }
+      to { opacity: 1; }
+    }
+
+    @keyframes bounceIn {
+      0% { transform: scale(0.5); opacity: 0; }
+      60% { transform: scale(1.1); opacity: 1; }
+      100% { transform: scale(1); }
     }
   </style>
 </head>
 <body>
-
-  <header>
-  <img src="logo.png" alt="Student Wala Logo" style="height:60px;">
-</header>
-
-  <div class="container">
-    <!-- Example Card 1 -->
-    <div class="card">
-      <h3>Physics Notes (Class 12)</h3>
-      <p>Download latest PDF notes for quick revision.</p>
-      <a class="btn" href="https://www.mediafire.com/" target="_blank">Get Link</a>
-    </div>
-
-    <!-- Example Card 2 -->
-    <div class="card">
-      <h3>Maths App</h3>
-      <p>Best Android app for solving equations and practicing problems.</p>
-      <a class="btn" href="https://play.google.com/" target="_blank">Get Link</a>
-    </div>
-
-    <!-- Example Card 3 -->
-    <div class="card">
-      <h3>Chemistry PDF (All Chapters)</h3>
-      <p>Full syllabus PDF for class 12 Chemistry with solutions.</p>
-      <a class="btn" href="https://www.mediafire.com/" target="_blank">Get Link</a>
-    </div>
-  </div>
-
-  <div class="ad-space">
-    🔸 Ad Space — paste your Adsterra / PropellerAds code here later 🔸
-  </div>
-
-  <footer>
-    © 2025 STUDENT WALA | All Rights Reserved
-  </footer>
-
+  <h1>📘 STUDENT WALA</h1>
+  <p>Your Smart Learning Partner</p>
+  <button onclick="location.href='signup.html'">Start Now</button>
 </body>
 </html>
