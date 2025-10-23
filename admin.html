@@ -1,0 +1,40 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Student Wala - Admin</title>
+  <link rel="stylesheet" href="/css/styles.css">
+</head>
+<body>
+  <div class="admin-wrap">
+    <div class="login-box" id="loginBox">
+      <h2>Admin Login</h2>
+      <input id="username" placeholder="Username" />
+      <input id="password" placeholder="Password" type="password" />
+      <button id="loginBtn">Login</button>
+      <div id="loginMsg"></div>
+    </div>
+
+    <div class="admin-panel" id="adminPanel" style="display:none;">
+      <h2>Admin Dashboard</h2>
+      <div class="upload-form">
+        <input id="title" placeholder="Title" />
+        <select id="classSel"><option value="8">8</option><option value="9">9</option><option value="10">10</option><option value="11">11</option><option value="12">12</option></select>
+        <input id="subject" placeholder="Subject" />
+        <select id="languageSel"><option>English</option><option>Hindi</option></select>
+        <input id="year" placeholder="Year (optional)" />
+        <select id="boardSel"><option>All India</option><option>State Board</option></select>
+        <input type="file" id="fileInput" accept="application/pdf" />
+        <button id="uploadBtn">Upload PDF</button>
+      </div>
+
+      <h3>Manage Files</h3>
+      <div id="manageList"></div>
+      <button id="logoutBtn">Logout</button>
+    </div>
+  </div>
+
+  <script src="/js/admin.js"></script>
+</body>
+</html>
